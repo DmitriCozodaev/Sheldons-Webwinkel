@@ -1,5 +1,4 @@
 .right-nav {
-    
     position: relative;
     z-index: 110;
     display: flex;
@@ -9,5 +8,18 @@
     padding: 0;
     margin-left: auto;
     font-size: .85714rem;
+    flex-wrap: nowrap;
+}
+#menuBalk {
+    display: flex;
+}
+.main-nav {
+    flex-direction: inherit;
+    border: 0;
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    display: flex;
     flex-wrap: nowrap;
 }
