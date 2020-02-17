@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Sheldons webwinkel</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js\login.js"></script>
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light default-color justify-content-between">
+      <a class="navbar-brand" href="Sheldons startpagina.html">Sheldon</a>
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Sheldons startpagina.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="categorieen" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Categorieën</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="categorieen">
+            <a class="dropdown-item" href="laptops.html">Laptops</a>
+            <a class="dropdown-item" href="desktops.html">Desktops</a>
+            <a class="dropdown-item" href="accessoires.html">Pc-accessoires</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="acties" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Acties</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="acties">
+            <a class="dropdown-item" href="topdeals.html">Topdeals</a>
+            <a class="dropdown-item" href="exclusivedeals.html">Exclusieve Select Deals</a>
+            <a class="dropdown-item" href="entertainmentacties.html">Entertainmentacties</a>
+          </div>
+        </li>
+      </ul>
+      <!--Dropdown-->
+
+
+      <!-- Links -->
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+        <ul class="right-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink3" aria-haspopup="true"
+              aria-expanded="false">Language</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink3">
+              <a class="dropdown-item" href="#">Nederlands (NL)</a>
+              <a class="dropdown-item" href="#">English (EN)</a>
+              <a class="dropdown-item" href="#">Français (FR)</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink4" aria-haspopup="true"
+              aria-expanded="false">Aanmelden</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink4">
+              <a class="dropdown-item" data-toggle="modal" data-target="#modalLRForm">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="winkelmandje.html"><i class="fas fa-2x fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </form>
+    </nav>
+  </header>
+  <main>
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+  <!--Modal: Login / Register Form-->
+  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="EmailAddress" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="EmailAddress">Uw
+                    email/Gebruikesnaam</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="mijnWachtwoord" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="mijnWachtwoord">Uw
+                    wachtwoord</label>
+                </div>
+                <div class="text-center mt-2">
+                  <button id="submit" class="btn btn-info" onclick="validate()">Log in <i
+                      class="fas fa-user"></i></button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                  data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your
+                    email</label>
+                </div>
+
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                    password</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
+                    password</label>
+                </div>
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: Login / Register Form-->
+<!--details-->
+<div class="container my-5 py-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img style="width: 380px;" src="img/2.jpg" alt="">
+            
+
+        </div>
+        <div class="col-md-8">
+            <h1>Asus VivoBook </h1>
+            <h3>17 F712FB-AU154T - Laptop - 17.3 Inch - Azerty</h3>
+            <p>14 inch Full HD scherm Intel Core i3 8 GB werkgeheugen 256 GB opslag SSD Intel UHD Graphics 620 Azertytoetsenbord (België).</p>
+            <li>
+                processor <br>
+                eldjs <br>
+                sdf <br>
+                SSDdf <br>
+                SSDdfsdf <br>
+                sdffsd <br>
+                fpdkfdpf <br>
+
+            </li>
+            <!-- Button details-->
+            <a href="detailsL1.html" class="btn btn-primary">Lees meer</a>
+            <!-- Button details-->
+
+            <!--Button winkelmandje-->
+            <a href="" class="btn addtokart"><i class="fas fa-cart-plus"></i> Voeg toe</a>
+            <!--Button winkelmandje-->
+            <!--details end-->
+ 
+
+
+
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+
+</html>
