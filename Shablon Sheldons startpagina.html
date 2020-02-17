@@ -18,8 +18,7 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
-  <script
-    src="js\login.js"></script>
+  <script src="js\login.js"></script>
 </head>
 
 <body>
@@ -27,7 +26,39 @@
   <!-- Start your project here-->
   <header>
     <nav class="navbar navbar-expand-xl navbar-light default-color justify-content-between">
-      <a class="navbar-brand" href="#">Sheldon</a>
+      <a class="navbar-brand" href="Sheldons startpagina.html">Sheldon</a>
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Sheldons startpagina.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="categorieen" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Categorieën</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="categorieen">
+            <a class="dropdown-item" href="laptops.html">Laptops</a>
+            <a class="dropdown-item" href="desktops.html">Desktops</a>
+            <a class="dropdown-item" href="accessoires.html">Pc-accessoires</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="acties" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Acties</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="acties">
+            <a class="dropdown-item" href="topdeals.html">Topdeals</a>
+            <a class="dropdown-item" href="exclusivedeals.html">Exclusieve Select Deals</a>
+            <a class="dropdown-item" href="entertainmentacties.html">Entertainmentacties</a>
+          </div>
+        </li>
+      </ul>
+      <!--Dropdown-->
+
+
+      <!-- Links -->
       <form class="form-inline my-2 my-lg-0 ml-auto">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
@@ -52,32 +83,9 @@
     </nav>
   </header>
   <main>
-    <!--Menubalk start-->
-    <div id="menuBalk" class="container">
-      <ul class="main-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Categorieën</a>
-          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink1">
-            <a class="dropdown-item" href="laptops.html">Laptops</a>
-            <a class="dropdown-item" href="#">Desktops</a>
-            <a class="dropdown-item" href="#">Pc-accessoires</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Acties</a>
-          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink2">
-            <a class="dropdown-item" href="#">Topdeals</a>
-            <a class="dropdown-item" href="#">Exclusieve Select Deals</a>
-            <a class="dropdown-item" href="#">Entertainmentacties</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!--Menubalk eind-->
 
-    
+
+
 
   </main>
 

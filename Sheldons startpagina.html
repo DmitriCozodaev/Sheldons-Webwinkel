@@ -18,8 +18,7 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
-  <script
-    src="js\login.js"></script>
+  <script src="js\login.js"></script>
 </head>
 
 <body>
@@ -28,23 +27,55 @@
   <header>
     <nav class="navbar navbar-expand-xl navbar-light default-color justify-content-between">
       <a class="navbar-brand" href="#">Sheldon</a>
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Sheldons startpagina.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="categorieen" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Categorieën</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="categorieen">
+            <a class="dropdown-item" href="laptops.html">Laptops</a>
+            <a class="dropdown-item" href="desktops.html">Desktops</a>
+            <a class="dropdown-item" href="accessoires.html">Pc-accessoires</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="acties" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Acties</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="acties">
+            <a class="dropdown-item" href="topdeals.html">Topdeals</a>
+            <a class="dropdown-item" href="exclusivedeals.html">Exclusieve Select Deals</a>
+            <a class="dropdown-item" href="entertainmentacties.html">Entertainmentacties</a>
+          </div>
+        </li>
+      </ul>
+      <!--Dropdown-->
+
+
+      <!-- Links -->
       <form class="form-inline my-2 my-lg-0 ml-auto">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
         <ul class="right-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink3" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="language" aria-haspopup="true"
               aria-expanded="false">Language</a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink3">
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="language">
               <a class="dropdown-item" href="#">Nederlands (NL)</a>
               <a class="dropdown-item" href="#">English (EN)</a>
               <a class="dropdown-item" href="#">Français (FR)</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink4" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="aanmelden" aria-haspopup="true"
               aria-expanded="false">Aanmelden</a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink4">
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="aanmelden">
               <a class="dropdown-item" data-toggle="modal" data-target="#modalLRForm">Login</a>
           </li>
         </ul>
@@ -52,36 +83,14 @@
     </nav>
   </header>
   <main>
-    <!--Menubalk start-->
-    <div id="menuBalk" class="container">
-      <ul class="main-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Categorieën</a>
-          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink1">
-            <a class="dropdown-item" href="laptops.html">Laptops</a>
-            <a class="dropdown-item" href="#">Desktops</a>
-            <a class="dropdown-item" href="#">Pc-accessoires</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Acties</a>
-          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink2">
-            <a class="dropdown-item" href="#">Topdeals</a>
-            <a class="dropdown-item" href="#">Exclusieve Select Deals</a>
-            <a class="dropdown-item" href="#">Entertainmentacties</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!--Menubalk eind-->
+
 
     <!--Carousel start-->
     <div class="container-fluid">
       <div class="row">
         <div id="onzeCarousel" class="offset-md-3 col-md-6">
-          <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="5000">
+          <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false"
+            data-interval="5000">
             <!--Indicators-->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -93,8 +102,7 @@
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <div class="view">
-                  <img class="d-block w-100" src="img\1.jpg"
-                    alt="First slide">
+                  <img class="d-block w-100" src="img\1.jpg" alt="First slide">
                   <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
@@ -105,8 +113,7 @@
               <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                  <img class="d-block w-100" src="img\2.jpg"
-                    alt="Second slide">
+                  <img class="d-block w-100" src="img\2.jpg" alt="Second slide">
                   <div class="mask rgba-black-strong"></div>
                 </div>
                 <div class="carousel-caption">
@@ -117,8 +124,7 @@
               <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                  <img class="d-block w-100" src="img\3.jpg"
-                    alt="Third slide">
+                  <img class="d-block w-100" src="img\3.jpg" alt="Third slide">
                   <div class="mask rgba-black-slight"></div>
                 </div>
                 <div class="carousel-caption">
