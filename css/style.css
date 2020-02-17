@@ -10,6 +10,17 @@
     font-size: .85714rem;
     flex-wrap: nowrap;
 }
+<<<<<<< HEAD
 .addtokart {
     background-color: greenyellow;
 }
+=======
+ 
+footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+
+}
+
+>>>>>>> e2a375bc0eaab8ccb10bc09df3c00693ce00d87c
