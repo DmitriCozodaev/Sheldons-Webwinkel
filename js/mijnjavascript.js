@@ -13,6 +13,9 @@ function removeFromCart () {
         itemsInCart--;
     }
     else {
-        window.alert("De winkelkar is leeg.")
+        window.alert ("De winkelkar is leeg.")
     }
 }    
+function deleteFromCart () {
+    itemsInCart = 0;
+}
